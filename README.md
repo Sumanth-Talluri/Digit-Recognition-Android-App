@@ -12,6 +12,8 @@ This is an Android Application using which you can take images of the handwritte
 
 * trainModel.py - This is where I created a model and trained it
 
+* cnn_model.h5 - This is the model I got after training. This will be used to predict.
+
 You can download the dataset from [here](https://www.tensorflow.org/datasets/catalog/mnist")
 
 ## Application Workflow
@@ -57,3 +59,10 @@ pixel count.
 5. The classified images are being stored in the respective folders.
 6. The accuracy of the model we found by the testing it on the hand written digit images
 which we created was about 96.67 (29/30)
+## Commands
+
+- Enable developer options and then turn on USB Debugging on the android device
+- Use these commands to run Android app on phone instead of virtual emulator on android studio
+> adb devices
+
+> abd reverse tcp:5000 tcp:5000
